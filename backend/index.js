@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const { port } = require('./config');
-const apiRouter = require('./routes/api');
+const { port } = require('./app/config');
+const apiRouter = require('./app/routes/api');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
 // db
-require('./db/mongoose');
+require('./app/db/mongoose');
 
 // pasery 
 // Content-type: application/json
